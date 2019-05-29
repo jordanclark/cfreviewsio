@@ -1,18 +1,18 @@
 {
     "name":"cfreviewsio",
     "slug":"cfreviewsio",
-    "version":"0.5.0",
+    "version":"0.5.1",
     "author":"Jordan Clark <jordanclark@gmail.com>",
     "keywords":[
         "reviews",
-		"reviews.io",
-		"reviews.co.uk",
+        "reviews.io",
+        "reviews.co.uk",
         "api",
         "rest"
     ],
     "shortDescription":"API client for reviews.io / reviews.co.uk",
     "type":"modules",
-    "location":"jordanclark/cfreviewsio#v0.5.0",
+    "location":"jordanclark/cfreviewsio#v0.5.1",
     "repository":{
         "URL":"https://github.com/jordanclark/cfreviewsio.git",
         "type":"GIT"

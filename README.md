@@ -9,9 +9,13 @@
 # cfreviewsio
 Reviews.io / Reviews.co.uk ColdFusion Rest API Client
 
-# Changes
-2019-05-29 Initial release
+## To Install
+Run the following from commandbox:
+`box install cfreviewsio`
 
-# API documentation
+## Changes
+2019-05-29 Open source release
+
+## API documentation
 https://api.reviews.io/documentation/
 

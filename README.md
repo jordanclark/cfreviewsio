@@ -1,5 +1,5 @@
-# reviews.io / reviews.co.uk
-Reviews.io ColdFusion Rest API Client
+# cfreviewsio
+Reviews.io / Reviews.co.uk ColdFusion Rest API Client
 
 # Changes
 2019-05-29 Initial release

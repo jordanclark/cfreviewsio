@@ -177,7 +177,7 @@ component {
 		}
 		// this.debugLog( http )> 
 		out.response= toString( http.fileContent );
-		this.debugLog( out.response );
+		// this.debugLog( out.response );
 		out.statusCode= http.responseHeader.Status_Code ?: 500;
 		this.debugLog( out.statusCode );
 		if ( left( out.statusCode, 1 ) == 4 || left( out.statusCode, 1 ) == 5 ) {

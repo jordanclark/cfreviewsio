@@ -145,11 +145,11 @@ component {
 		} else if ( isSimpleValue( arguments.json ) && len( arguments.json ) ) {
 			out.json= arguments.json;
 		}
-		//  copy args into url 
+		// copy args into url 
 		if ( isStruct( out.args ) ) {
-			//  replace {var} in url 
+			// replace {var} in url 
 			for ( item in out.args ) {
-				//  strip NULL values 
+				// strip NULL values 
 				if ( isNull( out.args[ item ] ) ) {
 					structDelete( out.args, item );
 				} else if ( isSimpleValue( out.args[ item ] ) && out.args[ item ] == "null" ) {
@@ -188,7 +188,7 @@ component {
 		} else if ( left( out.statusCode, 1 ) == 2 ) {
 			out.success= true;
 		}
-		//  parse response 
+		// parse response 
 		if ( len( out.response ) ) {
 			try {
 				out.response= deserializeJSON( replace( out.response, ':null', ':""', 'all' ) );

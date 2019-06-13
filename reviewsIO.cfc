@@ -115,7 +115,7 @@ component {
 
 	function apiDateFormat(required string date) {
 		if ( len( arguments.date ) && isDate( arguments.date ) ) {
-			arguments.date= replace( dateTimeFormat( arguments.date_created, "yyyy-mm-dd HH:nn:ss" ), " ", "T" );
+			arguments.date= replace( dateTimeFormat( arguments.date, "yyyy-mm-dd HH:nn:ss" ), " ", "T" );
 		} else {
 			arguments.date= "";
 		}

@@ -1,13 +1,14 @@
 component {
-	cfprocessingdirective( preserveCase=true );
+	// cfprocessingdirective( preserveCase=true );
 
 	function init(
 		required string store
 	,	required string apiKey
 	,	required string apiUrl= "https://api.reviews.co.uk"
 	,	numeric httpTimeOut= 120
-	,	boolean debug= ( request.debug ?: false )
+	,	boolean debug
 	) {
+		arguments.debug = ( arguments.debug ?: request.debug ?: false );
 		this.store= arguments.store;
 		this.apiKey= arguments.apiKey;
 		this.apiUrl= arguments.apiUrl;
@@ -25,7 +26,12 @@ component {
 				request.log( arguments.input );
 			}
 		} else if( this.debug ) {
-			cftrace( text=( isSimpleValue( arguments.input ) ? arguments.input : "" ), var=arguments.input, category="reviews-io", type="information" );
+			var info= ( isSimpleValue( arguments.input ) ? arguments.input : serializeJson( arguments.input ) );
+			cftrace(
+				var= "info"
+			,	category= "reviews-io"
+			,	type= "information"
+			);
 		}
 		return;
 	}
